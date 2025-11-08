@@ -1,7 +1,7 @@
 # 📚 Digital Library Management System  
 ### 💼 Internship Project — OASIS INFOBYTE (Task 5)
 
-![Library Management Banner](https://github.com/yourusername/OIBSIP5/blob/main/library_management.jpg)
+![Library Management Banner](https://github.com/rakshiii2605/OIBSIP5/blob/main/online%20library.jpg)
 
 ---
 
