@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+<h2>Admin Dashboard</h2>
+
+<h3>Add Book</h3>
+<form method="post" action="/add_book">
+<input name="title" placeholder="Book Title" required>
+<input name="author" placeholder="Author" required>
+<button>Add</button>
+</form>
+
+<h3>Books</h3>
+<table>
+<tr><th>ID</th><th>Title</th><th>Author</th><th>Status</th><th>Action</th></tr>
+{% for b in books %}
+<tr>
+<td>{{b[0]}}</td><td>{{b[1]}}</td><td>{{b[2]}}</td><td>{{b[3]}}</td>
+<td><a href="/delete_book/{{b[0]}}">Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<a class="btn" href="/books">View Books Page</a><br><br>
+<a href="/logout">Logout</a>
+</body>
+</html>

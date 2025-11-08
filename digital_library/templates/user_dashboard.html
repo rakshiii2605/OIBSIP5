@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Dashboard</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+<h2>Welcome User</h2>
+
+<table>
+<tr><th>ID</th><th>Title</th><th>Author</th><th>Status</th><th>Action</th></tr>
+{% for b in books %}
+<tr>
+<td>{{b[0]}}</td><td>{{b[1]}}</td><td>{{b[2]}}</td><td>{{b[3]}}</td>
+<td>
+{% if b[3]=="Available" %}
+<a href="/issue/{{b[0]}}">Issue</a>
+{% else %}
+<a href="/return/{{b[0]}}">Return</a>
+{% endif %}
+</td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/logout">Logout</a>
+</body>
+</html>
+

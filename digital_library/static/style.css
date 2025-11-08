@@ -1,0 +1,84 @@
+/* General Page Settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center Form */
+form {
+    width: 350px;
+    margin: 80px auto;
+    padding: 25px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Form Inputs */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button, a.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: none;
+    background-color: #2d89ef;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button:hover, a.btn:hover {
+    background-color: #1a5fb4;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    padding: 10px;
+    background-color: #2d89ef;
+    color: white;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Heading */
+h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Logout Link */
+a {
+    color: #E74C3C;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
